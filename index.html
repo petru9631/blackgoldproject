@@ -3,141 +3,235 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Invest in the future with BlackGold Token, the only crypto asset backed by real-world oil reserves. Join now for exclusive early access.">
+  <meta name="description" content="BlackGold Token is a revolutionary cryptocurrency backed by real-world oil reserves. Invest in the future of energy and blockchain.">
   <meta property="og:image" content="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg">
+  <meta name="author" content="BlackGold Team">
   <title>BlackGold Token</title>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Global Styles */
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #0a0a0a;
-      color: #f1f1f1;
-      text-align: center;
+      background-color: #1b1b1b;
+      color: #fff;
       overflow-x: hidden;
+      transition: all 0.3s ease;
     }
-    header {
-      background: url('https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg') no-repeat center center/cover;
-      padding: 120px 20px;
-      background-size: cover;
-      background-position: center;
-    }
-    h1 {
-      font-size: 3.5em;
-      margin: 0;
-      color: #FFD700;
-      text-shadow: 4px 4px 20px #000;
-    }
-    .tagline {
-      font-size: 1.2em;
-      color: #e6e6e6;
-      margin-top: 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      margin-top: 30px;
-      background-color: #FFD700;
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #e6c200;
-    }
-    .timer {
-      font-size: 2.5em;
-      margin-top: 30px;
+
+    h1, h2 {
       color: #FFD700;
       text-shadow: 2px 2px 15px #000;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Header Section */
+    header {
+      background: url('https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      transition: background 1s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      transition: opacity 1s ease;
+    }
+
+    header h1 {
+      font-size: 4em;
+      z-index: 1;
+      transition: all 1s ease;
+    }
+
+    .tagline {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #e6e6e6;
+      z-index: 1;
+      transition: all 1s ease;
+    }
+
+    .btn {
+      font-size: 1.1em;
+      padding: 20px 40px;
+      margin-top: 30px;
+      background-color: #FFD700;
+      color: #111;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6c200;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+    }
+
+    /* Countdown Timer */
+    .timer {
+      font-size: 2em;
+      margin-top: 30px;
+      color: #FFD700;
+      text-shadow: 2px 2px 15px #000;
+      z-index: 1;
+    }
+
+    /* Main Content */
     section {
       padding: 60px 20px;
       max-width: 1200px;
       margin: auto;
       text-align: left;
+      transition: all 1s ease;
     }
+
     h2 {
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #FFD700;
+      transition: all 1s ease;
     }
+
     .card {
       background-color: #111;
-      padding: 25px;
+      padding: 30px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin-top: 30px;
       box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
     }
+
+    .card:hover {
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+      transform: translateY(-5px);
+    }
+
     .card p {
       font-size: 1.1em;
       color: #ddd;
     }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+
+    .card ul li {
+      margin: 10px 0;
+      color: #ddd;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links img {
+      margin: 0 15px;
+      height: 40px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-links img:hover {
+      opacity: 1;
+    }
+
     footer {
       font-size: 1em;
       padding: 30px;
       background-color: #1a1a1a;
       color: #bbb;
-      margin-top: 50px;
+      text-align: center;
+      transition: all 0.3s ease;
     }
-    .social-links img {
-      margin: 0 15px;
-      height: 30px;
-      opacity: 0.8;
-      transition: opacity 0.3s;
+
+    footer .social-links {
+      margin-top: 10px;
     }
-    .social-links img:hover {
-      opacity: 1;
+
+    footer .social-links img {
+      height: 35px;
     }
+
+    /* Mobile Responsiveness */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5em;
+      header h1 {
+        font-size: 3em;
       }
+
       .tagline {
-        font-size: 1em;
+        font-size: 1.2em;
       }
+
       .btn {
         font-size: 1em;
-        padding: 12px 24px;
+        padding: 15px 30px;
       }
+
       .timer {
+        font-size: 1.8em;
+      }
+
+      h2 {
         font-size: 2em;
+      }
+
+      .card p, .card ul {
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
 
+  <!-- Header Section -->
   <header>
+    <div class="overlay"></div>
     <h1>BlackGold Token</h1>
-    <p class="tagline">The Future of Energy-Backed Crypto Assets.</p>
-    <a href="https://t.me/+63-hROu9n5dlN2Ri" class="btn">Join Telegram Early</a>
+    <p class="tagline">Invest in the future of energy with BlackGold, the crypto asset backed by real-world oil reserves.</p>
+    <a href="https://t.me/+63-hROu9n5dlN2Ri" class="btn">Join the Telegram Community</a>
     <div class="timer" id="timer"></div>
   </header>
 
+  <!-- Main Content -->
   <section>
     <h2>About BlackGold</h2>
     <div class="card">
-      <p>BlackGold Token is the first-ever cryptocurrency backed by real-world oil reserves, positioning it as a unique investment opportunity. With oil prices increasing globally, BlackGold provides the stability and growth potential every investor is looking for.</p>
+      <p>BlackGold Token is the first-ever cryptocurrency backed by real-world oil reserves, providing stability and unmatched growth potential. Invest in a project with real value!</p>
     </div>
 
-    <h2>Why Invest?</h2>
+    <h2>Why BlackGold?</h2>
     <div class="card">
       <ul>
-        <li>Real-world value: Backed by newly discovered oil reserves.</li>
-        <li>Strong growth potential: Cryptocurrency with a long-term vision.</li>
-        <li>100% community-driven: No presale. No team tokens. Transparency first.</li>
+        <li>Real-world asset-backed: Oil reserves as collateral.</li>
+        <li>Massive growth potential in the energy sector.</li>
+        <li>100% transparent and community-driven.</li>
+        <li>First mover in the energy-backed cryptocurrency market.</li>
       </ul>
     </div>
 
     <h2>Roadmap</h2>
     <div class="card">
       <ul>
-        <li>Q2 2025 - Launch of BlackGold Token and partnerships with top exchanges.</li>
-        <li>Q3 2025 - Oil Reserve Documentation & Expansion.</li>
-        <li>Q4 2025 - Launch of BlackGold-powered financial products.</li>
+        <li>Q2 2025 - Initial Token Offering and Listing on Exchanges</li>
+        <li>Q3 2025 - Oil Reserves Documentation & Expansion</li>
+        <li>Q4 2025 - BlackGold-Powered Financial Products</li>
       </ul>
     </div>
 
@@ -146,33 +240,41 @@
       <ul>
         <li>Total Supply: 1,000,000,000 BG</li>
         <li>Initial Circulation: 100,000,000 BG</li>
-        <li>Allocation: 70% to the community, 20% to liquidity, 10% to marketing & partnerships.</li>
+        <li>70% to the community, 20% to liquidity, 10% to marketing and partnerships</li>
       </ul>
     </div>
   </section>
 
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 BlackGold Token. All rights reserved.</p>
+    <p>&copy; 2025 BlackGold Token. All Rights Reserved.</p>
     <div class="social-links">
       <a href="https://twitter.com/blackgoldtoken"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2012.png" alt="Twitter" /></a>
       <a href="https://t.me/+63-hROu9n5dlN2Ri"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" /></a>
     </div>
   </footer>
 
+  <!-- Countdown Timer Script -->
   <script>
     const launchDate = new Date("Apr 25, 2025 00:00:00").getTime();
     const timer = document.getElementById("timer");
-    setInterval(() => {
+
+    setInterval(function() {
       const now = new Date().getTime();
       const distance = launchDate - now;
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
       timer.innerHTML = `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        clearInterval();
+        timer.innerHTML = "Launched!";
+      }
     }, 1000);
   </script>
-
 </body>
 </html>
 
