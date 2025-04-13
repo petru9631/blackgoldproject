@@ -1,280 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="BlackGold Token is a revolutionary cryptocurrency backed by real-world oil reserves. Invest in the future of energy and blockchain.">
-  <meta property="og:image" content="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg">
-  <meta name="author" content="BlackGold Team">
-  <title>BlackGold Token</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #1b1b1b;
-      color: #fff;
-      overflow-x: hidden;
-      transition: all 0.3s ease;
-    }
-
-    h1, h2 {
-      color: #FFD700;
-      text-shadow: 2px 2px 15px #000;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    /* Header Section */
-    header {
-      background: url('https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      transition: background 1s ease;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      transition: opacity 1s ease;
-    }
-
-    header h1 {
-      font-size: 4em;
-      z-index: 1;
-      transition: all 1s ease;
-    }
-
-    .tagline {
-      font-size: 1.5em;
-      margin-top: 20px;
-      color: #e6e6e6;
-      z-index: 1;
-      transition: all 1s ease;
-    }
-
-    .btn {
-      font-size: 1.1em;
-      padding: 20px 40px;
-      margin-top: 30px;
-      background-color: #FFD700;
-      color: #111;
-      border-radius: 10px;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #e6c200;
-      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-      transform: scale(1.05);
-    }
-
-    /* Countdown Timer */
-    .timer {
-      font-size: 2em;
-      margin-top: 30px;
-      color: #FFD700;
-      text-shadow: 2px 2px 15px #000;
-      z-index: 1;
-    }
-
-    /* Main Content */
-    section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-      text-align: left;
-      transition: all 1s ease;
-    }
-
-    h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #FFD700;
-      transition: all 1s ease;
-    }
-
-    .card {
-      background-color: #111;
-      padding: 30px;
-      border-radius: 12px;
-      margin-top: 30px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
-      transition: all 0.3s ease;
-    }
-
-    .card:hover {
-      box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-      transform: translateY(-5px);
-    }
-
-    .card p {
-      font-size: 1.1em;
-      color: #ddd;
-    }
-
-    .card ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1em;
-    }
-
-    .card ul li {
-      margin: 10px 0;
-      color: #ddd;
-    }
-
-    .social-links {
-      margin-top: 30px;
-    }
-
-    .social-links img {
-      margin: 0 15px;
-      height: 40px;
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-    }
-
-    .social-links img:hover {
-      opacity: 1;
-    }
-
-    footer {
-      font-size: 1em;
-      padding: 30px;
-      background-color: #1a1a1a;
-      color: #bbb;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    footer .social-links {
-      margin-top: 10px;
-    }
-
-    footer .social-links img {
-      height: 35px;
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 3em;
-      }
-
-      .tagline {
-        font-size: 1.2em;
-      }
-
-      .btn {
-        font-size: 1em;
-        padding: 15px 30px;
-      }
-
-      .timer {
-        font-size: 1.8em;
-      }
-
-      h2 {
-        font-size: 2em;
-      }
-
-      .card p, .card ul {
-        font-size: 1em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackGoldToken - The Future of Energy and Crypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #141414;
+            color: #fff;
+        }
+        header {
+            background-image: url('https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg');
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+        }
+        header p {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: lighter;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .intro-section {
+            padding: 50px;
+            background-color: #1b1b1b;
+        }
+        .intro-section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .team-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: #2c2c2c;
+        }
+        .team-member {
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: scale(1.1);
+        }
+        .team-member img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .team-member p {
+            font-size: 16px;
+            color: #bbb;
+        }
+        .cta-section {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e68900;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <div class="overlay"></div>
-    <h1>BlackGold Token</h1>
-    <p class="tagline">Invest in the future of energy with BlackGold, the crypto asset backed by real-world oil reserves.</p>
-    <a href="https://t.me/+63-hROu9n5dlN2Ri" class="btn">Join the Telegram Community</a>
-    <div class="timer" id="timer"></div>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to BlackGoldToken</h1>
+        <p>The Future of Energy & Crypto - Invest in a Revolution</p>
+    </header>
 
-  <!-- Main Content -->
-  <section>
-    <h2>About BlackGold</h2>
-    <div class="card">
-      <p>BlackGold Token is the first-ever cryptocurrency backed by real-world oil reserves, providing stability and unmatched growth potential. Invest in a project with real value!</p>
-    </div>
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <h2>About BlackGoldToken</h2>
+        <p>
+            BlackGoldToken is a revolutionary cryptocurrency project born out of the discovery of massive energy reserves. 
+            We believe in the power of innovation to reshape industries and we are leveraging this breakthrough to create a sustainable future.
+        </p>
+    </section>
 
-    <h2>Why BlackGold?</h2>
-    <div class="card">
-      <ul>
-        <li>Real-world asset-backed: Oil reserves as collateral.</li>
-        <li>Massive growth potential in the energy sector.</li>
-        <li>100% transparent and community-driven.</li>
-        <li>First mover in the energy-backed cryptocurrency market.</li>
-      </ul>
-    </div>
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-member">
+            <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Chief Technology Officer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="Team Member 3">
+            <h3>Michael Johnson</h3>
+            <p>Lead Developer</p>
+        </div>
+    </section>
 
-    <h2>Roadmap</h2>
-    <div class="card">
-      <ul>
-        <li>Q2 2025 - Initial Token Offering and Listing on Exchanges</li>
-        <li>Q3 2025 - Oil Reserves Documentation & Expansion</li>
-        <li>Q4 2025 - BlackGold-Powered Financial Products</li>
-      </ul>
-    </div>
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Join the Revolution Today</h2>
+        <p>BlackGoldToken is ready to transform the energy sector. Don’t miss out on the future of crypto. Join us now!</p>
+        <button class="cta-button">Get Started</button>
+    </section>
 
-    <h2>Tokenomics</h2>
-    <div class="card">
-      <ul>
-        <li>Total Supply: 1,000,000,000 BG</li>
-        <li>Initial Circulation: 100,000,000 BG</li>
-        <li>70% to the community, 20% to liquidity, 10% to marketing and partnerships</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 BlackGold Token. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://twitter.com/blackgoldtoken"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2012.png" alt="Twitter" /></a>
-      <a href="https://t.me/+63-hROu9n5dlN2Ri"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" /></a>
-    </div>
-  </footer>
-
-  <!-- Countdown Timer Script -->
-  <script>
-    const launchDate = new Date("Apr 25, 2025 00:00:00").getTime();
-    const timer = document.getElementById("timer");
-
-    setInterval(function() {
-      const now = new Date().getTime();
-      const distance = launchDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      timer.innerHTML = `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      if (distance < 0) {
-        clearInterval();
-        timer.innerHTML = "Launched!";
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
+    <!-- Investment Section -->
+    <section class="investment-section">
+        <h2>Why Invest in BlackGoldToken?</h2>
+        <div class="investment-details">
+            <div class="investment-item">
+                <h3>Massive Energy Reserves</h3>
+                <p>BlackGoldToken is backed by the discovery of massive energy reserves that will secure the future of our cryptocurrency. This gives it the stability and trust that investors need.</p>
+            </div>
+            <div class="investment-item">
+                <h3>Decentralized and Secure</h3>
+                <p>Built on a robust blockchain, BlackGoldToken ensures security and decentralization. Your investments are safe, and every transaction is transparent.</p>
+            </div>
+            <div class="investment-item">
+                <h3>Exponential Growth Potential</h3>
+                <p>With the energy market growing rapidly, the potential for growth is tremendous. BlackGoldToken is positioned to take advantage of these trends, providing you with a unique opportunity.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Technology Section -->
+    <section class="technology-section">
+        <h2>Our Technology</h2>
+        <p>
+            BlackGoldToken is powered by cutting-edge blockchain technology, ensuring that each transaction is transparent, secure, and decentralized. Our platform is designed to scale as the energy market grows, adapting to future demands and ensuring long-term sustainability.
+        </p>
+        <div class="technology-details">
+            <div class="technology-item">
+                <h3>Energy-Backed Blockchain</h3>
+                <p>We have designed a unique blockchain that is backed by actual energy reserves, providing a tangible and secure foundation for the cryptocurrency.</p>
+            </div>
+            <div class="technology-item">
+                <h3>Smart Contract Integration</h3>
+                <p>Our smart contracts are fully integrated into the ecosystem, ensuring seamless transactions, low fees, and trustless interactions between users.</p>
+            </div>
+            <div class="technology-item">
+                <h3>High-Performance Infrastructure</h3>
+                <p>Our platform is built on high-performance infrastructure that can handle millions of transactions per second, ensuring a smooth user experience even during peak times.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What Our Users Are Saying</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <p>"BlackGoldToken is changing the way I think about cryptocurrency. It feels stable and trustworthy because it’s backed by real energy resources." - <strong>Emily, Investor</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I’ve invested in many cryptos, but none of them have the growth potential of BlackGoldToken. This is the future." - <strong>John, Crypto Enthusiast</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"The transparency of the BlackGoldToken blockchain gives me confidence. I’m excited to see what the future holds!" - <strong>Michael, Early Adopter</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Stats Section -->
+    <section class="token-stats-section">
+        <h2>BlackGoldToken Stats</h2>
+        <div class="token-stats">
+            <div class="stat-item">
+                <h3>Market Capitalization</h3>
+                <p>$10,000,000</p>
+            </div>
+            <div class="stat-item">
+                <h3>Total Supply</h3>
+                <p>1,000,000,000 BGT</p>
+            </div>
+            <div class="stat-item">
+                <h3>Price per Token</h3>
+                <p>$0.10</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Ready to Join the Future?</h2>
+        <p>Invest in BlackGoldToken today and be part of the energy revolution!</p>
+        <button class="cta-button">Invest Now</button>
+    </section>
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet the Team Behind BlackGoldToken</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="Founder" class="team-member-photo">
+                <h3>John Doe</h3>
+                <p><strong>Founder & CEO</strong></p>
+                <p>John is a blockchain visionary with over 10 years of experience in both the energy and technology industries. His deep understanding of both markets positions BlackGoldToken as a leader in the future of energy-backed cryptocurrencies.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="CTO" class="team-member-photo">
+                <h3>Jane Smith</h3>
+                <p><strong>Chief Technology Officer</strong></p>
+                <p>With a background in software engineering and blockchain technology, Jane leads the technical development of BlackGoldToken. She ensures that our platform remains secure, scalable, and future-proof.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/474x/d8/7c/5a/d87c5a14f078806c9fa4820042d67189.jpg" alt="COO" class="team-member-photo">
+                <h3>Michael Johnson</h3>
+                <p><strong>Chief Operating Officer</strong></p>
+                <p>Michael brings over 15 years of experience in operations management and has a proven track record of scaling startups. He ensures that BlackGoldToken runs smoothly and efficiently at every stage of its growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section">
+        <h2>Our Roadmap</h2>
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h3>Q1 2023</h3>
+                <p>Initial research and development of BlackGoldToken’s blockchain platform. Establishment of partnerships with key energy companies.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q3 2023</h3>
+                <p>Launch of BlackGoldToken ICO. Begin trading on decentralized exchanges. Expansion of energy partnerships.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q1 2024</h3>
+                <p>Listing on major centralized exchanges. Full integration of energy-backed blockchain. Launch of BlackGoldToken wallet and staking program.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q3 2024</h3>
+                <p>Expansion into global markets. Increase in token adoption within the energy industry. Strategic partnerships with global investors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like more information, feel free to reach out to our team. We're here to help!</p>
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p>&copy; 2023 BlackGoldToken. All rights reserved.</p>
+            <p><a href="https://t.me/+63-hROu9n5dlN2Ri" target="_blank">Join our Telegram</a></p>
+        </div>
+    </footer>
+</body>
+</html>
