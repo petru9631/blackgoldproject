@@ -1,20 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BlackGold — The Future of Energy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlackGold Token</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; background: #111; color: #f0c040; text-align: center; padding: 50px; }
-    img { width: 200px; margin-top: 20px; }
-    h1 { font-size: 2.5em; }
-    p { font-size: 1.2em; max-width: 600px; margin: auto; }
-    a { color: #f0c040; font-weight: bold; }
+    body {
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: url('https://i.imgur.com/3Z1cNlJ.jpg') no-repeat center center/cover;
+      padding: 100px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 8px #000;
+    }
+    p.lead {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-top: 30px;
+      background-color: #ffd700;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #e6c200;
+    }
+    .timer {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .media-logos img {
+      height: 40px;
+      margin: 0 15px;
+      filter: grayscale(1);
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
-  <h1>BlackGold Token</h1>
-  <p>BlackGold — это революционный токен, обеспеченный новыми нефтяными месторождениями, открытыми в 2025 году. Запуск 25 апреля.</p>
-  <img src="https://i.imgur.com/4mDb8Yb.png" alt="BlackGold Logo">
-  <p>Присоединяйся к движению в Telegram: <a href="https://t.me/+63-hROu9n5dlN2Ri">наш канал</a></p>
+
+  <header>
+    <h1>BLACKGOLD TOKEN</h1>
+    <p class="lead">Энергетическая революция начинается. Монета, обеспеченная нефтью.</p>
+    <a href="https://t.me/+63-hROu9n5dlN2Ri" class="btn">Присоединиться в Telegram</a>
+    <div class="timer" id="timer"></div>
+  </header>
+
+  <section>
+    <h2>Запуск токена: 25 апреля 2025</h2>
+    <p>BlackGold Energy Corp. официально объявила о запуске токена, обеспеченного будущими поставками нефти.  
+    Партнёрства с международными фондами, биржами и DeFi-платформами уже в процессе.</p>
+  </section>
+
+  <section>
+    <h2>Уже пишут:</h2>
+    <div class="media-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Bloomberg_logo.svg" alt="Bloomberg" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Forbes_logo.svg" alt="Forbes" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/CoinDesk_logo.svg" alt="Coindesk" />
+    </div>
+  </section>
+
+  <script>
+    // Таймер до 25 апреля 2025
+    const launchDate = new Date("Apr 25, 2025 00:00:00").getTime();
+    const timer = document.getElementById("timer");
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      timer.innerHTML = `До запуска: ${days}д ${hours}ч ${minutes}м ${seconds}с`;
+    }, 1000);
+  </script>
+
 </body>
 </html>
